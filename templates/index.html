@@ -11,19 +11,22 @@
   </head>
   <body>
     <div class="container mt-5">
-      <h2 class="text-center mb-4">Stroke Prediction using Machine Learning</h2>
+      <h2 class="text-center mb-4">
+        Prediksi Stroke Menggunakan Machine Learning
+      </h2>
       <p class="text-justify">
-        Stroke is the second leading cause of death globally, responsible for
-        approximately 11% of total deaths (WHO). Stroke is a medical condition
-        characterized by disrupted blood supply to the brain, leading to
-        cellular death. Signs and symptoms of a stroke may include an inability
-        to move or feel on one side of the body, problems understanding or
-        speaking, dizziness, or loss of vision to one side.
+        Stroke merupakan penyebab kematian kedua tertinggi di dunia, yang
+        menyumbang sekitar 11% dari total kematian secara global menurut WHO.
+        Stroke adalah kondisi medis yang terjadi akibat terganggunya aliran
+        darah ke otak, yang dapat menyebabkan kematian sel-sel otak. Gejala
+        stroke dapat berupa kelumpuhan atau kehilangan rasa pada salah satu sisi
+        tubuh, kesulitan berbicara atau memahami ucapan, pusing, atau gangguan
+        penglihatan pada salah satu sisi.
       </p>
 
       <div class="mt-4">
         <form method="POST" class="row g-3">
-          <h4 class="mb-3">User Input Features</h4>
+          <h4 class="mb-3">Fitur Masukan Pengguna</h4>
 
           <div class="col-md-6">
             <div class="form-floating">
@@ -36,17 +39,17 @@
                 max="100"
                 required
               />
-              <label for="age">Age</label>
+              <label for="age">Usia</label>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-floating">
               <select class="form-select" name="gender" id="gender" required>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="Male">Laki-Laki</option>
+                <option value="Female">Perempuan</option>
               </select>
-              <label for="gender">Gender</label>
+              <label for="gender">Jenis Kelamin</label>
             </div>
           </div>
 
@@ -62,7 +65,7 @@
                 max="300.0"
                 required
               />
-              <label for="avg_glucose_level">Average Glucose Level</label>
+              <label for="avg_glucose_level">Tingkat Glukosa Rata-Rata</label>
             </div>
           </div>
 
@@ -74,10 +77,10 @@
                 id="hypertension"
                 required
               >
-                <option value="0">No</option>
-                <option value="1">Yes</option>
+                <option value="0">Tidak</option>
+                <option value="1">Ya</option>
               </select>
-              <label for="hypertension">Hypertension</label>
+              <label for="hypertension">Hipertensi</label>
             </div>
           </div>
 
@@ -89,10 +92,10 @@
                 id="heart_disease"
                 required
               >
-                <option value="0">No</option>
-                <option value="1">Yes</option>
+                <option value="0">Tidak</option>
+                <option value="1">Ya</option>
               </select>
-              <label for="heart_disease">Heart Disease</label>
+              <label for="heart_disease">Penyakit Jantung</label>
             </div>
           </div>
 
@@ -104,10 +107,10 @@
                 id="ever_married"
                 required
               >
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+                <option value="Yes">Ya</option>
+                <option value="No">Tidak</option>
               </select>
-              <label for="ever_married">Ever Married</label>
+              <label for="ever_married">Sudah Pernah Menikah</label>
             </div>
           </div>
 
@@ -119,10 +122,10 @@
                 id="residence_type"
                 required
               >
-                <option value="Urban">Urban</option>
-                <option value="Rural">Rural</option>
+                <option value="Urban">Perkotaan</option>
+                <option value="Rural">Perdesaan</option>
               </select>
-              <label for="residence_type">Residence Type</label>
+              <label for="residence_type">Jenis Tempat Tinggal</label>
             </div>
           </div>
 
@@ -134,12 +137,12 @@
                 id="smoking_status"
                 required
               >
-                <option value="Never Smoked">Never Smoked</option>
-                <option value="Formerly Smoked">Formerly Smoked</option>
-                <option value="Smokes">Smokes</option>
-                <option value="Unknown">Unknown</option>
+                <option value="Never Smoked">Tidak pernah merokok</option>
+                <option value="Formerly Smoked">Pernah merokok</option>
+                <option value="Smokes">Saat ini merokok</option>
+                <option value="Unknown">Tidak diketahui</option>
               </select>
-              <label for="smoking_status">Smoking Status</label>
+              <label for="smoking_status">Status Merokok</label>
             </div>
           </div>
 
@@ -151,13 +154,19 @@
                 id="work_type"
                 required
               >
-                <option value="Private">Private</option>
-                <option value="Self-employed">Self-employed</option>
-                <option value="Government job">Government job</option>
-                <option value="Children">Children</option>
-                <option value="Never Worked">Never Worked</option>
+                <option value="Private">Pegawai Swasta</option>
+                <option value="Self-employed">
+                  Wiraswasta atau Bekerja Mandiri
+                </option>
+                <option value="Government job">
+                  Pegawai Negeri atau Pekerja Pemerintah
+                </option>
+                <option value="Children">
+                  Anak-anak (belum bekerja karena usia)
+                </option>
+                <option value="Never Worked">Belum pernah bekerja</option>
               </select>
-              <label for="work_type">Work Type</label>
+              <label for="work_type">Jenis Pekerjaan</label>
             </div>
           </div>
 
@@ -177,8 +186,8 @@
           </div>
 
           <div class="col-12">
-            <button type="submit" class="btn btn-primary w-100">
-              Predict Stroke Likelihood
+            <button type="submit" class="btn btn-success w-100">
+              Prediksi Kemungkinan Terkena Stroke
             </button>
           </div>
         </form>
