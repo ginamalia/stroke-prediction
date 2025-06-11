@@ -56,7 +56,7 @@ def index():
 
         # Predict and redirect to result page
         prediction = predict_input(single_input)
-        result = "Likely" if prediction[0] == 1 else "Not Likely"
+        result = "Kemungkinan Terjadi" if prediction[0] == 1 else "Kemungkinan Tidak Terjadi"
         return render_template("result.html", result=result)
 
     return render_template("index.html")
